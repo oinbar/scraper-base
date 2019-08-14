@@ -1,15 +1,15 @@
 FROM continuumio/anaconda3
 
-RUN apt-get install unzip
+# RUN apt-get install unzip
 
-RUN pip install xgboost scikit-plot selenium Google-Images-Search
+RUN pip install selenium
 
 # RUN curl -O https://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip
 # RUN unzip chromedriver_linux64.zip
-RUN chmod 777 chromedriver
+# RUN chmod 777 chromedriver
 
 # this might just replace all three lines above
-RUN apt-get install chromedriver
+RUN apt-get -y install chromedriver
 
 RUN mkdir /root/.jupyter && mkdir /workdir
 
