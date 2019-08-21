@@ -2,6 +2,8 @@ FROM continuumio/anaconda3
 
 # RUN apt-get install unzip
 
+RUN easy_install pip
+
 RUN pip install selenium wget
 
 # RUN curl -O https://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip

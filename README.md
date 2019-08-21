@@ -15,10 +15,12 @@ tells git what files to track
 git add --all
 ```
 tells git what to commit ("save")
-```git commit -m "short description of changes"
+```
+git commit -m "short description of changes"
 ```
 push updates to github
-```git push origin master
+```
+git push origin master
 ```
 pull updates from github
 ```
