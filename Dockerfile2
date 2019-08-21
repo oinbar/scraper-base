@@ -1,8 +1,8 @@
-FROM continuumio/anaconda3:2019.07
+FROM continuumio/anaconda3
 
-SHELL ["/bin/bash", "-l", "-c"]
+# RUN apt-get install unzip
 
-RUN apt-get install unzip
+RUN easy_install pip
 
 RUN pip install selenium wget
 
